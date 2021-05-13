@@ -18,8 +18,4 @@ if (process.env.JAWSDB_URL) {
   );
 }
 
-<<<<<<< HEAD
 module.exports = sequelize;
-=======
-module.exports = sequelize;
->>>>>>> c2c874fea7635f467c746db4b9f346d887bb90df
