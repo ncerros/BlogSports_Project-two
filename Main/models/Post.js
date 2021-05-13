@@ -1,11 +1,10 @@
 const { Model, DataTypes } = require('sequelize');
+const bcrypt = require('bcrypt');
 const sequelize = require('../config/connection');
 
-// create our Traveller model
-class Traveller extends Model {}
+class Post extends Model {}
 
-// create fields/columns for Traveller model
-Traveller.init(
+Post.init(
   {
     id: {
       type: DataTypes.INTEGER,
@@ -13,26 +12,28 @@ Traveller.init(
       primaryKey: true,
       autoIncrement: true
     },
-    name: {
+    title: {
       type: DataTypes.STRING,
       allowNull: false
     },
-    email: {
-      type: DataTypes.STRING,
-      allowNull: false,
-      unique: true,
-      validate: {
-        isEmail: true
+    content: {
+      type: DataTypes.TEXT,
+      allowNull: false
+    },
+    user_id: {
+      type: DataTypes.INTEGER,
+      references: {
+        model: 'user',
+        key: 'id'
       }
     }
   },
   {
     sequelize,
-    timestamps: false,
     freezeTableName: true,
     underscored: true,
-    modelName: 'traveller'
+    modelName: 'post'
   }
 );
 
-module.exports = Traveller;
+module.exports = Post;
