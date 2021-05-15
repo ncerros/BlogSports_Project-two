@@ -1,28 +1,26 @@
 {
-  "name": "traveller-api",
+  "name": "blogsports_project2",
   "version": "1.0.0",
   "description": "",
-  "main": "server.js",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js",
-    "watch": "nodemon server.js"
+    "start": "index.js"
   },
-  "keywords": [],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/asa151930/BlogSports_Project2.git"
+  },
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "dotenv": "^8.2.0",
-    "express": "^4.17.1",
-    "mysql2": "^2.2.1",
-    "sequelize": "^6.3.5"
+  "bugs": {
+    "url": "https://github.com/asa151930/BlogSports_Project2/issues"
   },
-  "devDependencies": {
-    "nodemon": "^2.0.4",
-    "eslint": "^6.1.0",
-    "eslint-config-airbnb": "^18.0.1",
-    "eslint-config-prettier": "^6.7.0",
-    "eslint-plugin-prettier": "^3.1.2",
-    "prettier": "^1.19.1"
+  "homepage": "https://github.com/asa151930/BlogSports_Project2#readme",
+  "dependencies": {
+    "dotenv": "^9.0.2",
+    "express": "^4.17.1",
+    "mysql2": "^2.2.5",
+    "sequelize": "^6.6.2"
   }
 }
