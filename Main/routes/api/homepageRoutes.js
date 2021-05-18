@@ -11,7 +11,7 @@ router.get('/', async (req, res) => {
       include: [
         {
           model: User,
-          attributes: ['name'],
+          attributes: ['username'],
         },
       ],
     });
@@ -25,7 +25,8 @@ router.get('/', async (req, res) => {
       logged_in: req.session.logged_in 
     });
   } catch (err) {
-    res.status(500).json(err);
+    console.log(err);
+    res.status(503).json(err);
   }
 });
 
@@ -36,14 +37,14 @@ router.get('/post/:id', async (req, res) => {
       include: [
         {
           model: User,
-          attributes: ['name'],
+          attributes: ['username'],
         },
         {
           model: Comment,
           include: [
             {
               model: User,
-              attributes: ['name']
+              attributes: ['username']
             }
           ]         
         }
@@ -60,7 +61,7 @@ router.get('/post/:id', async (req, res) => {
       logged_in_user: req.session.user_id
     });
   } catch (err) {
-    res.status(500).json(err);
+    res.status(502).json(err);
   }
 });
 
@@ -80,7 +81,7 @@ router.get('/userProfile', withAuth, async (req, res) => {
       logged_in: true
     });
   } catch (err) {
-    res.status(500).json(err);
+    res.status(501).json(err);
   }
 });
 
@@ -119,67 +120,3 @@ router.get('/logout', (req, res) => {
 });
 
 module.exports = router;
-
-// const router = require('express').Router();
-// const { Location, Traveller, Trip } = require('../../models');
-
-// // GET all locations
-// router.get('/', async (req, res) => {
-//   try {
-//     const locationData = await Location.findAll();
-//     res.status(200).json(locationData);
-//   } catch (err) {
-//     res.status(500).json(err);
-//   }
-// });
-
-// // GET a single location
-// router.get('/:id', async (req, res) => {
-//   try {
-//     const locationData = await Location.findByPk(req.params.id, {
-//       // JOIN with travellers, using the Trip through table
-//       include: [{ model: Traveller, through: Trip, as: 'location_travellers' }]
-//     });
-
-//     if (!locationData) {
-//       res.status(404).json({ message: 'No location found with this id!' });
-//       return;
-//     }
-
-//     res.status(200).json(locationData);
-//   } catch (err) {
-//     res.status(500).json(err);
-//   }
-// });
-
-// // CREATE a location
-// router.post('/', async (req, res) => {
-//   try {
-//     const locationData = await Location.create(req.body);
-//     res.status(200).json(locationData);
-//   } catch (err) {
-//     res.status(400).json(err);
-//   }
-// });
-
-// // DELETE a location
-// router.delete('/:id', async (req, res) => {
-//   try {
-//     const locationData = await Location.destroy({
-//       where: {
-//         id: req.params.id
-//       }
-//     });
-
-//     if (!locationData) {
-//       res.status(404).json({ message: 'No location found with this id!' });
-//       return;
-//     }
-
-//     res.status(200).json(locationData);
-//   } catch (err) {
-//     res.status(500).json(err);
-//   }
-// });
-
-// module.exports = router;
