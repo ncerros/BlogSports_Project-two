@@ -4,9 +4,8 @@ const userData =
 [
   {
     "name": "",
-    "email": " ",
     "password": ""
-    }
+    },
 ]
 
 const seedUsers = () => User.bulkCreate(userData);
