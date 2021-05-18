@@ -4,8 +4,8 @@ const postData =
 
 [
     {
-        "name": " ",
-        "description": " "
+        "name": "",
+        "description": ""
     },    
    
   ]
