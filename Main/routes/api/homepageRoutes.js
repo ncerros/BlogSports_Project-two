@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const { Post, User, Comment } = require('../../models');
+const { Post, User, Comment, ProfileRoutes } = require('../../models');
 const withAuth = require('../../utils/auth');
 
 
@@ -67,7 +67,7 @@ router.get('/post/:id', async (req, res) => {
 
 // View User Profile
 // Use withAuth middleware to prevent access to route
-router.get('/userProfile', withAuth, async (req, res) => {
+router.get('/profile', withAuth, async (req, res) => {
   try {
     // Find the logged in user based on the session ID
     const userData = await User.findByPk(req.session.user_id, {
@@ -76,7 +76,7 @@ router.get('/userProfile', withAuth, async (req, res) => {
     });
 
     const user = userData.get({ plain: true });
-    res.render('userProfile', {
+    res.render('Profile', {
       ...user,
       logged_in: true
     });

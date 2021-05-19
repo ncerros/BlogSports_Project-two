@@ -9,6 +9,8 @@ const exphbs = require('express-handlebars');
 const hbs = exphbs.create({  });
 const PORT = process.env.PORT || 3001;
 
+
+
 // Configure and link a session object with the sequelize store
 const sess = {
   secret: 'Super secret secret',
@@ -19,6 +21,7 @@ const sess = {
     db: sequelize
   })
 };
+
 
 app.use(session(sess));
 
@@ -37,4 +40,3 @@ sequelize.sync({ force: false }).then(() => {
   app.listen(PORT, () => console.log(`Sport Blog is LIVE on http://localhost:${PORT}`));
 });
 
-// testing
