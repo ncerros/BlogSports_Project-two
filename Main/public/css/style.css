@@ -4,11 +4,7 @@ header, .project:not(:last-child) {
     border-bottom: 1px solid #ccc;
   }
 
-  .body {
-    margin-top: 20px;
-    background: red;
-    color: lightskyblue;
-  }
+
   
   .no-button {
     background: none;
@@ -26,8 +22,6 @@ header, .project:not(:last-child) {
   }
 
   /* Profile css */ 
-
-
 
 .settings .user-profile {
   margin: 0 0 1rem 0;
@@ -49,14 +43,14 @@ header, .project:not(:last-child) {
   font-weight: bold;
 }
 
-.form {
+.form-site {
   border: 1px solid #596280;
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
   border-radius: 2px;
   font-size: .825rem;
   background: #1A233A;
-  color: #bcd0f7;
+  color: gray;
 }
 
 .settings .user-profile h5.username {
