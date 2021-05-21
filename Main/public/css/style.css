@@ -4,8 +4,6 @@ header, .project:not(:last-child) {
     border-bottom: 1px solid #ccc;
   }
 
-
-  
   .no-button {
     background: none;
     border: none;
@@ -43,25 +41,7 @@ header, .project:not(:last-child) {
   font-weight: bold;
 }
 
-.form-site {
-  border: 1px solid #596280;
-  -webkit-border-radius: 2px;
-  -moz-border-radius: 2px;
-  border-radius: 2px;
-  font-size: .825rem;
-  background: #1A233A;
-  color: gray;
-}
 
-.settings .user-profile h5.username {
-  margin: 0 0 1rem 0;
-}
-
-.settings .user-profile h6.user-email{
-  margin: 0;
-  font-size: 1rem;
-  font-weight: 400;
-}
 
 
 
