@@ -16,11 +16,23 @@ User.init(
       primaryKey: true,
       autoIncrement: true,
     },
+    name: {
+      type: DataTypes.STRING,
+      allowNull: true
+    },
     email: {
       type: DataTypes.STRING,
       allowNull: false,
       unique: true
     },
+    // linkedIn: {
+    //   type: DataTypes.STRING,
+    //   allowNull: true
+    // },
+    // phoneNumber: {
+    //   type: DataTypes.INTEGER,
+    //   allowNull: true
+    // },
     password: {
       type: DataTypes.STRING,
       allowNull: false,
@@ -51,3 +63,5 @@ User.init(
 );
 
 module.exports = User;
+
+// image currently disabled since positioning is all over the place. 
