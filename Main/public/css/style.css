@@ -25,3 +25,19 @@ header, .project:not(:last-child) {
 
   /* Profile css */ 
 
+.body {
+  margin-top: 20px;
+  color: #bcd0f7;
+    background: darkblue;
+}
+
+.settings .user-profile {
+  margin: 0 0 1rem 0;
+  padding-bottom: 1rem;
+  text-align: center;
+}
+
+.settings .user-profile .user-photo {
+  margin: 0 0 1rem 0;
+}
+
