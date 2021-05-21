@@ -16,6 +16,11 @@ User.init(
       primaryKey: true,
       autoIncrement: true,
     },
+    username: {
+      type: DataTypes.STRING,
+      allowNull: false,
+      unique: true
+    },
     email: {
       type: DataTypes.STRING,
       allowNull: false,
@@ -25,7 +30,7 @@ User.init(
       type: DataTypes.STRING,
       allowNull: false,
       validate: {
-        // The password must have 8 characters
+        // The password must have 6 characters
         len: [6],
       },
     },
