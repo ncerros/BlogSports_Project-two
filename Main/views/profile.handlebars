@@ -1,97 +1,172 @@
 <div class="container">
-<div class="row">
-	<div class="col-xl-3 col-lg-3 col-md-12 col-sm-12 col-12">
-		<div class="card">
-			<div class="card-body">
-				<div class="settings">
-					<div class="user-profile">
-						<div class="user-photo">
-							<img src="" alt="">
-						</div>
-						<h5 class="user-name">{{{id}}}</h5>
-						<h6 class="user-email">{{{email}}}</h6>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-
-  <div class="col-xl-9 col-lg-9 col-md-12 col-sm-12 col-12">
-		<div class="card">
-			<div class="card-body">
-				<div class="row">
-					<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
-						<h6 class="mb-3 text-primary">Account Information</h6>
-					</div>
-					<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
-						<div class="form-group">
-							<label for="fullName">Full Name</label>
-							<input type="text" class="form-control" id="fullName" placeholder="Update Name">
-						</div>
-					</div>
-					<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
-						<div class="form-group">
-							<label for="eMail">Email</label>
-							<input type="email" class="form-control" id="eMail" placeholder="Update Email">
-						</div>
-					</div>
-					<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
-						<div class="form-group">
-							<label for="phone">Phone</label>
-							<input type="text" class="form-control" id="phone" placeholder="Update Phone #">
-						</div>
-					</div>
-					<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
-						<div class="form-group">
-							<label for="website">Website URL</label>
-							<input type="url" class="form-control" id="website" placeholder="Update LinkedIn">
-						</div>
-					</div>
-				</div>
-
-        <div class="row gutters">
-					<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
-						<h6 class="mb-3 text-primary">Contact Information</h6>
-					</div>
-					<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
-						<div class="form-group">
-							<label for="street">Street</label>
-							<input type="name" class="form-control" id="street" placeholder="Update Street">
-						</div>
-					</div>
-					<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
-						<div class="form-group">
-							<label for="city">City</label>
-							<input type="name" class="form-control" id="city" placeholder="Update City">
-						</div>
-					</div>
-					<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
-						<div class="form-group">
-							<label for="state">State</label>
-							<input type="text" class="form-control" id="state" placeholder="Update State">
-						</div>
-					</div>
-					<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
-						<div class="form-group">
-							<label for="zip">Zip Code</label>
-							<input type="text" class="form-control" id="zip" placeholder="Update Zip-Code">
-						</div>
-					</div>
-				</div>
-        <div class="row gutters">
-					<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
-						<div class="text-right">
-							<button type="button" id="submit" name="submit" class="btn btn-secondary">Cancel</button>
-							<button type="button" id="submit" name="submit" class="btn btn-primary">Save Changes</button>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+  <div class="row">
+    <div class="col-xl-3 col-lg-3 col-md-12 col-sm-12 col-12">
+      <div class="card">
+        <div class="card-body">
+          <div class="settings">
+            <div class="user-profile">
+              <div class="user-photo">
+                <img src="">
+              </div>
+              <h5 class="user-name">
+                {{{id}}}
+              </h5>
+              <h6 class="user-email">
+                {{{email}}}
+              </h6>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-xl-9 col-lg-9 col-md-12 col-sm-12 col-12">
+      <div class="card">
+        <div class="card-body">
+          <div class="row">
+            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+              <h6 class="mb-3 text-primary">
+                Edit Account Settings
+              </h6>
+            </div>
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+              <div class="form-group">
+                <label for="fullName">
+                  Full Name
+                </label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="fullName"
+                  placeholder="Update Name"
+                />
+              </div>
+            </div>
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+              <div class="form-group">
+                <label for="eMail">
+                  Email
+                </label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="eMail"
+                  placeholder="Update Email"
+                />
+              </div>
+            </div>
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+              <div class="form-group">
+                <label for="phone">
+                  Phone
+                </label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="phone"
+                  placeholder="Update Phone #"
+                />
+              </div>
+            </div>
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+              <div class="form-group">
+                <label for="website">
+                  LinkedIn Profile
+                </label>
+                <input
+                  type="url"
+                  class="form-control"
+                  id="website"
+                  placeholder="Update URL"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="row gutters">
+            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+              <h6 class="mb-3 text-primary">
+                <br>
+                Contact Information
+              </h6>
+            </div>
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+              <div class="form-group">
+                <label for="street">
+                  Street
+                </label>
+                <input
+                  type="name"
+                  class="form-control"
+                  id="street"
+                  placeholder="Update Street"
+                />
+              </div>
+            </div>
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+              <div class="form-group">
+                <label for="city">
+                  City
+                </label>
+                <input
+                  type="name"
+                  class="form-control"
+                  id="city"
+                  placeholder="Update City"
+                />
+              </div>
+            </div>
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+              <div class="form-group">
+                <label for="state">
+                  State
+                </label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="state"
+                  placeholder="Update State"
+                />
+              </div>
+            </div>
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+              <div class="form-group">
+                <label for="zip">
+                  Zip Code
+                </label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="zip"
+                  placeholder="Update Zip Code"
+                />
+                <br>
+              </div>
+            </div>
+          </div>
+          <div class="row gutters">
+            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+              <div class="text-right">
+                <button
+                  type="button"
+                  id="submit"
+                  name="submit"
+                  class="btn btn-secondary"
+                >
+                  Cancel
+                </button>
+                <button
+                  type="button"
+                  id="submit"
+                  name="submit"
+                  class="btn btn-primary"
+                >
+                  Save Changes
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
-</div>
-
-
-
 <script src="/js/profile.js"></script>
