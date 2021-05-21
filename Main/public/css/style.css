@@ -1,6 +1,13 @@
+.body {
+  margin-top: 20px;
+  background-color: red;
+}
+
 header, .project:not(:last-child) {
     border-bottom: 1px solid #ccc;
   }
+
+  
   
   .no-button {
     background: none;
@@ -16,20 +23,10 @@ header, .project:not(:last-child) {
     color: #065b83;
     text-decoration: underline;
   }
-  
-  .dollar-amount {
-    color: #056605;
-    font-weight: bold;
-    margin-left: -5px;
-  }
 
   /* Profile css */ 
 
-.body {
-  margin-top: 20px;
-  color: #bcd0f7;
-    background: darkblue;
-}
+
 
 .settings .user-profile {
   margin: 0 0 1rem 0;
@@ -39,5 +36,18 @@ header, .project:not(:last-child) {
 
 .settings .user-profile .user-photo {
   margin: 0 0 1rem 0;
+}
+
+.card {
+  background: lightcoral;
+  border-radius: 5px;
+  border: 0;
+  margin-bottom: 1rem;
+  font-size: 8px;
+  color: black;
+}
+
+.form-site {
+  
 }
 
