@@ -2,30 +2,28 @@
 
 <div class="container">
   <div class="gutters">
-    <div class="col-xl-3 col-lg-3 col-md-12 col-sm-12 col-12">
-      <div class="card-style">
+    <div class="col-xl-3 col-lg-3 col-md-12 col-sm-12 col-12"></div>
+      <div class="card h-100">
         <div class="card-body">
           <div class="settings">
             <div class="user-profile">
               <div class="user-photo">
                 <img src="" alt="sports" />
               </div>
-              <h3>
-                {{{id}}}
-              </h3>
-              <h4>
-                {{{email}}}
-              </h4>
-            </div>
-          </div>
+              <h5 class="user-name">
+                  {{{id}}}
+              </h5>
+              <h6 class="user-email">
+                  {{{email}}}
+              </h6>
         </div>
       </div>
     </div>
   </div>
   <div class="col-xl-9 col-lg-9 col-md-12 col-sm-12 col-12">
-    <div class="card-style">
+    <div class="card h-100">
       <div class="card-body">
-        <div class="gutters">
+        <div class="row-gutters">
           <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
             <h5 class="mb-3 text-primary">
               Account Details
@@ -44,6 +42,7 @@
                 placeholder="Update Name"
               />
             </div>
+          </div>
 
         <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
             <div class="form-group">
@@ -51,13 +50,13 @@
                 Email Address
               </label>
               <input
-                type="text"
+                type="email"
                 class="form"
                 id="Email"
                 placeholder="Update Email Address"
               />
             </div>
-
+        </div>
             <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
             <div class="form-group">
               <label for="Phone #">
@@ -70,14 +69,14 @@
                 placeholder="Update Phone #"
               />
             </div>
-
+            </div>
             <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
             <div class="form-group">
               <label for="LinkedIn">
                 LinkedIn Profile
               </label>
               <input
-                type="text"
+                type="url"
                 class="form"
                 id="LinkedIn" 
                 placeholder="Update LinkedIn URL"
@@ -102,20 +101,20 @@
                 placeholder="Update Street"
               />
             </div>
-
+           </div>
             <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
             <div class="form-group">
               <label for="City">
                 City
               </label>
               <input
-                type="text"
+                type="name"
                 class="form"
                 id="City" 
                 placeholder="Update City"
               />
             </div>
-
+            </div>
             <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
             <div class="form-group">
               <label for="State">
@@ -125,8 +124,8 @@
                 type="text"
                 class="form"
                 id="State" 
-                placeholder="Update State"
-              />
+                placeholder="Update State">
+              </div>
             </div>
 
             <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
@@ -138,14 +137,22 @@
                 type="text"
                 class="form"
                 id="Zip" 
-                placeholder="Update Zipcode"
-              />
+                placeholder="Update Zipcode">
             </div>
-
-
+        </div>
+      </div>
+      <div class="gutters">
+          <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+              <div class="text-right">
+                  <button type="button" id="submit" name="submit" class="btn btn-secondary">Reset</button>
+                  <button type="button" id="submit" name="submit" class="btn btn-success">Update</button>
+              
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </div>
 </div>
+
 <script src="/js/profile.js"></script>
