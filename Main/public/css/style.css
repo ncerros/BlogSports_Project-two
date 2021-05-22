@@ -34,11 +34,11 @@ header, .project:not(:last-child) {
 }
 
 .settings .user-profile .user-photo img {
-  width: 90px;
-  height: 90px;
-  -webkit-border-radius: 100px;
-  -moz-border-radius: 100px;
-  border-radius: 100px;
+  width: 100px;
+  height: 100px;
+  -webkit-border-radius: 150px;
+  -moz-border-radius: 150px;
+  border-radius: 150px;
 }
 
 .card {
