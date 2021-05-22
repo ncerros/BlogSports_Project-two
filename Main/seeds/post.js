@@ -4,9 +4,10 @@ const postData =
 
 [
     {
-        "name": "",
-        "description": ""
-    },    
+        "title": "Hank Aldous",
+       "content": "The Dallas Mavericks will win today!",
+      "user_id": 1 
+      },    
    
   ]
   
