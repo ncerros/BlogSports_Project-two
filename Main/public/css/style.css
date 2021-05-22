@@ -42,7 +42,7 @@ header, .project:not(:last-child) {
 }
 
 .card {
-  background: lightslategray;
+  background: rgb(129, 132, 134);
   border-radius: 10px;
   border: 0;
   margin-bottom: 1rem;
@@ -58,12 +58,12 @@ header, .project:not(:last-child) {
   border-radius: 2px;
   font-size: .825rem;
   background: #1a233a;
-  color: lightblue;
+  color: rgb(182, 191, 194);
 }
 
 
 
-/* will be updating more on friday for profile */
+
 
 
 
