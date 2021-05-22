@@ -64,4 +64,4 @@ User.init(
 
 module.exports = User;
 
-// image currently disabled since positioning is all over the place. 
+ 

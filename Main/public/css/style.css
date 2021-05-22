@@ -21,18 +21,28 @@ header, .project:not(:last-child) {
 
   /* Profile css */ 
 
+.body {
+  margin-top: 20px;
+  color: rgb(4, 26, 34);
+  background: #0f1c3d;
+}
+
 .settings .user-profile {
   margin: 0 0 1rem 0;
   padding-bottom: 1rem;
   text-align: center;
 }
 
-.settings .user-profile .user-photo {
-  margin: 0 0 1rem 0;
+.settings .user-profile .user-photo img {
+  width: 100px;
+  height: 100px;
+  -webkit-border-radius: 150px;
+  -moz-border-radius: 150px;
+  border-radius: 150px;
 }
 
 .card {
-  background: lightslategray;
+  background: rgb(129, 132, 134);
   border-radius: 10px;
   border: 0;
   margin-bottom: 1rem;
@@ -41,7 +51,19 @@ header, .project:not(:last-child) {
   font-weight: bold;
 }
 
-/* will be updating more on friday for profile */
+.form-control {
+  border: 1px solid #13204d;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  font-size: .825rem;
+  background: #1a233a;
+  color: rgb(182, 191, 194);
+}
+
+
+
+
 
 
 
