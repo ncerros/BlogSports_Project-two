@@ -15,6 +15,35 @@ router.get('/homepage', async (req, res) => {
         },
       ],
     });
+  // const newsUrl =
+  // "https://newsapi.org/v2/top-headlines?country=in&category=sports&apiKey=61ad2e873ff340f59248cd423ec146cd";
+  
+  // function requestNews(req, res) {
+  //   request(newsUrl, function(err, resp, body) {
+  //     if (err) throw err;
+  //     let payload = JSON.parse(body);
+  //     let topNews = payload.articles;
+  //     // const newsObj = topNews.map(news => {
+  //     //   return {
+  //     //     title: news.title,
+  //     //     desc: news.description,
+  //     //     imgUrl: news.urlToImage,
+  //     //     url: news.url
+  //     //   };
+  //     // });
+  //     const newsArr = [];
+  //     for (const i = 0; i < topNews.length; i++) {
+  //       const news = topNews[i];
+  //       newsArr.push({
+  //         title: news.title,
+  //         desc: news.description,
+  //         imgUrl: news.urlToImage,
+  //         url: news.url
+  //       });
+  //     }
+  //     res.render("homepage", { newsObj: newsArr });
+  //   });
+  // }
 
     // Serialize data so the template can read it
     const posts = postData.map((post) => post.get({ plain: true }));

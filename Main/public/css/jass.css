@@ -18,7 +18,9 @@
    * Remove the margin in all browsers.
    */
   body {
-    margin: 0;
+    background-image: url(../css/img/american-football-soccer-ball-24730667.jpeg);
+    background-size: cover;
+    
   }
   
   /**

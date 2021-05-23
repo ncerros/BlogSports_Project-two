@@ -1,4 +1,23 @@
+{{#each posts as |post| }}
+<div class="card col-lg-12">
+  <div class="card mb-3" style="max-width: 540px;">
+    <div class="row no-gutters">
+      <div class="col-lg-12">
+        <div class="card-body">
+          <p class="card=text" id="cardcontent">{{post.content}}</p>
+          <p class="card-text" id="cardDate">
+            <small>By:{{post.title}}</small>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{{/each}}
 
+
+
+{{!-- 
 <!-- Loop over each object in the posts array -->
 {{#each posts as |post| }}
 <div class="row mb-4 post">
@@ -6,7 +25,7 @@
     <h2>
       <!-- Call helper function with triple brackets to render the emoji span as HTML -->
       
-      <a href="/post/{{post.id}}">{{post.name}}</a>
+      <a href="/post/{{post.id}}">{{post.title}}</a>
     </h2>
     <p>
       <span for="img" aria-label="money">💲</span>
@@ -14,7 +33,7 @@
       <span class="dollar-amount">{{post.id}}</span>
       needed!
     </p>
-    <p>Created by {{post.name}} </p>
+    <p>Created by {{post.title}} </p>
   </div>
   <div class="col-md-7">
     <p>
@@ -22,4 +41,4 @@
     </p>
   </div>
 </div>
-{{/each}}
+{{/each}} --}}
