@@ -1,12 +1,12 @@
 const newFormHandler = async (event) => {
   event.preventDefault();
 
-  const name = document.querySelector('#profile-name').value.trim();
-  const needed_funding = document.querySelector('#profile-funding').value.trim();
-  const description = document.querySelector('#profile-desc').value.trim();
+  const name = document.querySelector('#userRoutes-name').value.trim();
+  const needed_funding = document.querySelector('#userRoutes-funding').value.trim();
+  const description = document.querySelector('#userRoutes-desc').value.trim();
 
   if (name && needed_funding && description) {
-    const response = await fetch(`/api/profile`, {
+    const response = await fetch(`/api/userRoutes`, {
       method: 'POST',
       body: JSON.stringify({ name, needed_funding, description }),
       headers: {
@@ -15,7 +15,7 @@ const newFormHandler = async (event) => {
     });
 
     if (response.ok) {
-      document.location.replace('/profile');
+      document.location.replace('/userRoutes');
     } else {
       alert('Failed to create project');
     }
@@ -26,22 +26,23 @@ const delButtonHandler = async (event) => {
   if (event.target.hasAttribute('data-id')) {
     const id = event.target.getAttribute('data-id');
 
-    const response = await fetch(`/api/profile/${id}`, {
+    const response = await fetch(`/api/userRoutes/${id}`, {
       method: 'DELETE',
     });
 
-    if (response.ok) {
-      document.location.replace('/profile');
+    if (response.ok)  {
+      document.location.replace('/userRoutes');
     } else {
-      alert('Failed to delete project');
+      console.log (response);
+      console.log ('Failed to delete project');
     }
   }
 };
 
 // document
-//   .querySelector('.new-profile-form')
+//   .querySelector('.new-userRoutes-form')
 //   .addEventListener('submit', newFormHandler);
 
 // document
-//   .querySelector('.profile-list')
+//   .querySelector('.userRoutes-list')
 //   .addEventListener('click', delButtonHandler);
