@@ -1,18 +1,19 @@
 {
   "name": "blogsports_project2",
   "version": "1.0.0",
-  "description": "",
+  "description": "Realtime BlogSports app with rooms",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "node server.js",
+    "dev": "nodemon server"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/asa151930/BlogSports_Project2.git"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Ali Arab, Darren Watson, Henry Aldous, and Norman Cerros",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/asa151930/BlogSports_Project2/issues"
   },
@@ -24,10 +25,14 @@
     "express": "^4.17.1",
     "express-handlebars": "^5.3.2",
     "express-session": "^1.17.2",
+    "moment": "^2.29.1",
     "mysql2": "^2.2.5",
     "node": "^16.1.0",
     "routes": "^2.1.0",
     "sequelize": "^6.6.2",
     "socket.io": "^4.1.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
   }
 }
