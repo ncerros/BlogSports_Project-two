@@ -15,9 +15,9 @@ const server = http.createServer(app);
 const io = socketio(server);
 
 // Set static folder
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, 'publicblog')));
 
-const botName = 'ChatCord Bot';
+const botName = 'SportsBlog Bot';
 
 // It will stablish connection when user runs the page
 io.on('connection', socket => {
@@ -27,14 +27,14 @@ io.on('connection', socket => {
     socket.join(user.room);
 
     // It will welcome the each user that join the room
-    socket.emit('message', formatMessage(botName, 'Welcome to ChatCord!'));
+    socket.emit('message', formatMessage(botName, 'Welcome to SportsBlog!'));
 
     // It will broadcast the connection of a new user
     socket.broadcast
       .to(user.room)
       .emit(
         'message',
-        formatMessage(botName, `${user.username} has joined the chat`)
+        formatMessage(botName, `${user.username} has joined the blog`)
       );
 
     // Provide the user the room info
@@ -45,7 +45,7 @@ io.on('connection', socket => {
   });
 
   // User will get the blogMessage
-  socket.on('chatMessage', msg => {
+  socket.on('blogMessage', msg => {
     const user = getCurrentUser(socket.id);
 
     io.to(user.room).emit('message', formatMessage(user.username, msg));
@@ -58,7 +58,7 @@ io.on('connection', socket => {
     if (user) {
       io.to(user.room).emit(
         'message',
-        formatMessage(botName, `${user.username} has left the chat`)
+        formatMessage(botName, `${user.username} has left the blog`)
       );
 
       // will take the user and provide the room info
