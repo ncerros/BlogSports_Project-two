@@ -17,7 +17,7 @@ const io = socketio(server);
 // Set static folder
 app.use(express.static(path.join(__dirname, 'publicblog')));
 
-const botName = 'SportsBlog Bot';
+const botName = 'SportsBlog';
 
 // It will stablish connection when user runs the page
 io.on('connection', socket => {

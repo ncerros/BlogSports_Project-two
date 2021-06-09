@@ -65,7 +65,7 @@ function outputMessage(message) {
   document.querySelector('.blog-messages').appendChild(div);
 }
 
-// Created room name will be added to DOM
+// Created room name and will be added to DOM
 function outputRoomName(room) {
   roomName.innerText = room;
 }
