@@ -7,7 +7,15 @@ The purpose of this blog is to provide any fan the ability to blog with another 
 [Heroku app deployed](https://sports-blog-project2.herokuapp.com/)
 
 
-![BlogSports](https://user-images.githubusercontent.com/72178042/119399509-9a07f700-bc9e-11eb-9e0b-f3fdf1545114.png)
+![sportsblogA](images/sportsblogA.png)
+
+![sportsblogD](images/sportsblogD.png)
+
+![sportsblogH](images/sportsblogH.png)
+
+![sportsblogN](images/sportsblogN.png)
+
+![sportsblog](images/sportsblog.png)
  
 # Instructions
 Users have to sign-up before using the Sport Blog app. Then log-in to the main page. 
