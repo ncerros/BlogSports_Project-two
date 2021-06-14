@@ -19,8 +19,7 @@ The purpose of this blog is to provide any fan the ability to blog with another 
 
  
 # Instructions
-Users have to sign-up before using the Sport Blog app. Then log-in to the main page. 
-
+The user has to enter a username and choose the room to join the blog. 
 
 # Usage
 . Run npm install to install all dependencies.
