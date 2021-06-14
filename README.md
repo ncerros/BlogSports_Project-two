@@ -2,7 +2,7 @@
 
 # Description
 
-The purpose of this blog is to provide any fan the ability to blog with another fan about a sport. The app has the option to choose the sport room such as NFL, NBA, MLS, NHL, and MLB.   
+The purpose of this blog is to provide any fan the ability to blog with another fan about any sport. The app has the option to choose the sport room such as NFL, NBA, MLS, NHL, and MLB.   
 
 <!-- [Heroku app deployed](https://sports-blog-project2.herokuapp.com/) -->
 
