@@ -4,8 +4,9 @@
 
 The purpose of this blog is to provide any fan the ability to blog with another fan about a sport. The app has the option to choose the sport room such as NFL, NBA, MLS, NHL, and MLB.   
 
-[Heroku app deployed](https://sports-blog-project2.herokuapp.com/)
+<!-- [Heroku app deployed](https://sports-blog-project2.herokuapp.com/) -->
 
+![sportsblog](images/sportsblog.png)
 
 ![sportsblogA](images/sportsblogA.png)
 
@@ -15,7 +16,7 @@ The purpose of this blog is to provide any fan the ability to blog with another 
 
 ![sportsblogN](images/sportsblogN.png)
 
-![sportsblog](images/sportsblog.png)
+
  
 # Instructions
 Users have to sign-up before using the Sport Blog app. Then log-in to the main page. 
